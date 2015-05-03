@@ -1,0 +1,15 @@
+<%= form_for @company do |f| %>
+  <%= f.label :name, "Company name:" %>
+  <%= f.text_field :name, required: true %>
+
+  <%= f.label :website %>
+  <%= f.url_field :website %>
+
+  <%= f.label :hr_contact %>
+  <%= f.text_field :hr_contact %>
+
+  <%= f.label :hr_contact_email %>
+  <%= f.email_field :hr_contact_email %>
+
+  <%= f.submit 'Create company record'%>
+<% end %>
